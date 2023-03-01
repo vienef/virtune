@@ -1,0 +1,59 @@
+.duration-button,
+.queue-button,
+.track-button,
+.play-button {
+  --radius: 50%;
+  --dimension: var(--size);
+  margin: 0 var(--font-size);
+}
+
+.desktop-button {
+  padding: calc(var(--font-size) * .75);
+}
+
+.desktop-button.dark-button.play-button:focus {
+  color: var(--accent-color);
+  background-color: transparent;
+}
+
+.desktop-button.light-button,
+.desktop-button.light-button:hover {
+  border-color: transparent;
+}
+
+.desktop-button.light-button:hover,
+.desktop-button.light-button.play-button:hover {
+  color: var(--high-emphasize);
+  background-color: transparent;
+}
+
+.desktop-button.light-button.play-button:focus {
+  color: var(--high-emphasize);
+  background-color: var(--accent-color);
+}
+
+.desktop-button.light-button:hover:disabled,
+.desktop-button.play-button:hover:disabled {
+  color: var(--disabled);
+}
+
+.mobile-button {
+  padding: var(--size);
+  background-color: var(--status-bar);
+}
+
+.duration-button {
+  --constant: var(--duration-button-constant);
+}
+
+.queue-button {
+  --constant: var(--queue-button-constant);
+}
+
+.track-button {
+  --constant: var(--track-button-constant);
+}
+
+.play-button {
+  --constant: var(--play-button-constant);
+}

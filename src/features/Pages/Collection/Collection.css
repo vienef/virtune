@@ -1,0 +1,22 @@
+.collection-heading {
+  padding: var(--main-padding);
+  font-size: calc(var(--font-size) * 2);
+}
+
+.collection-container {
+  padding: 0 var(--main-padding) var(--main-padding);
+  height: calc(100% - (var(--main-padding) * 2 + var(--font-size) * 2));
+  overflow-y: scroll;
+}
+
+.collection-list {
+  display: grid;
+  gap: var(--font-size);
+  grid: auto-flow auto / repeat(var(--collection-column), 1fr);
+}
+
+.collection-item {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: var(--transition);
+}

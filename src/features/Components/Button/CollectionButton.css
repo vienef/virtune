@@ -1,0 +1,69 @@
+.collection-button {
+  padding: var(--font-size);
+  width: 100%;
+  border: var(--button-border);
+  border-radius: inherit;
+}
+
+.collection-button.dark-button {
+  background-color: var(--surface);
+  border-color: var(--surface);
+}
+
+.collection-button.dark-button:hover,
+.collection-button.dark-button:focus {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.collection-button .content-description {
+  line-height: initial;
+}
+
+.add-button {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.add-button .button-icon {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: auto;
+  font-size: calc(var(--font-size) * 4);
+  background-color: var(--accent-color);
+  border-radius: inherit;
+}
+
+.add-button.light-button .button-icon {
+  color: var(--background);
+}
+
+.add-button.light-button:hover .button-icon,
+.add-button.light-button:focus .button-icon {
+  background-color: inherit;
+}
+
+.add-button .button-text {
+  margin-top: var(--font-size);
+  font-weight: 700;
+  opacity: 1;
+}
+
+.add-button:disabled .button-icon {
+  background-color: var(--surface);
+}
+
+.add-button:disabled:hover {
+  background-color: var(--surface);
+  border-color: var(--surface);
+}
+
+.add-button.light-button:disabled .button-icon {
+  background-color: var(--disabled);
+}
+
+.add-button.light-button:disabled:hover {
+  background-color: transparent;
+  border-color: var(--disabled);
+}

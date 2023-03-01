@@ -1,0 +1,115 @@
+.playlist {
+  padding: var(--main-padding);
+  width: var(--playlist-width);
+  height: var(--playlist-height);
+  position: var(--playlist-position);
+  top: 0;
+  right: var(--playlist-edge);
+  z-index: var(--playlist-index);
+  background-color: var(--app-bar);
+  overflow-y: scroll;
+}
+
+.playlist .player-button {
+  margin: 0;
+  position: fixed;
+  right: calc(var(--main-padding) + var(--scrollbar-width));
+}
+
+.playlist .player-button.light-button {
+  background-color: inherit;
+}
+
+.playlist .player-button.light-button:hover,
+.playlist .player-button.light-button:focus {
+  color: var(--app-bar);
+  background-color: var(--high-emphasize);
+}
+
+.playlist .playlist-info {
+  width: var(--data-title-width);
+}
+
+.playlist-table {
+  width: 100%;
+}
+
+.playlist-header {
+  height: var(--navbar-icon-height);
+  background-color: var(--surface);
+}
+
+.playlist-data--dark,
+.playlist-data--light {
+  width: 100%;
+  border-bottom: .1vh solid;
+  transition: var(--transition);
+}
+
+.playlist-data--dark {
+  border-color: var(--surface);
+}
+
+.playlist-data--light {
+  border-color: var(--high-emphasize);
+}
+
+.playlist-data--dark:hover,
+.playlist-data--light:hover {
+  background-color: var(--surface);
+}
+
+.playlist-data--dark:hover .option-button,
+.playlist-data--light:hover .option-button {
+  opacity: 1;
+}
+
+.playlist-data--on, .playlist-data--on:hover {
+  background-color: var(--accent-color-light);
+}
+
+.data-queue {
+  width: var(--data-width-small);
+  font-size: calc(var(--font-size) * 1.25);
+  text-align: center;
+}
+
+.data-artwork {
+  width: var(--data-height);
+}
+
+.data-title,
+.data-album {
+  text-align: left;
+}
+
+.data-genre {
+  width: var(--data-width-medium);
+  text-align: left;
+}
+
+.data-duration {
+  width: var(--navbar-icon-height);
+  text-align: right;
+}
+
+.data-more {
+  width: var(--data-width-small);
+  font-size: calc(var(--font-size) * 1.5);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.data-more .button-off {
+  color: inherit;
+}
+
+th.data-queue,
+th.data-artwork,
+th.data-more {
+  color: transparent;
+}
+
+td.data-artwork {
+  padding: var(--font-size) 0;
+}

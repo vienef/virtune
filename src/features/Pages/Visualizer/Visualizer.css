@@ -1,0 +1,64 @@
+.visualizer,
+.visualizer-portrait {
+  display: flex;
+  align-items: flex-end;
+  padding: var(--main-padding);
+  height: var(--visualizer-height);
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.visualizer-portrait .player-button {
+  opacity: 0;
+}
+
+.visualizer-portrait:hover .player-button,
+.visualizer-portrait .player-button:focus {
+  opacity: 1;
+}
+
+.visualizer-portrait .visualizer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 0;
+  aspect-ratio: 1 / 1;
+  width: auto;
+  height: calc(100% - var(--main-padding) * 4);
+  position: absolute;
+  bottom: calc(var(--main-padding) * 2);
+}
+
+.visualizer-portrait p {
+  padding: calc(var(--main-padding) / 2);
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+}
+
+.visualizer-portrait .content-title {
+  margin-left: 0;
+  margin-bottom: calc(var(--font-size) / 10);
+  font-size: calc(var(--font-size) * 1.25);
+}
+
+.visualizer-portrait .content-description {
+  font-size: var(--font-size);
+}
+
+.visualizer-navigation {
+  width: var(--visualizer-navigation-width);
+  position: absolute;
+  top: var(--visualizer-navigation-mobile);
+  left: var(--visualizer-navigation-mobile);
+  right: var(--visualizer-navigation-desktop);
+  bottom: var(--visualizer-navigation-desktop);
+  transition: var(--transition);
+}
+
+.visualizer-list {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+}

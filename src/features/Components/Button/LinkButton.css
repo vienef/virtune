@@ -1,0 +1,22 @@
+.navbar-rect {
+  display: flex;
+  align-items: center;
+  width: var(--navbar-width-extended);
+  height: var(--navbar-width);
+}
+
+.navbar-square {
+  width: var(--navbar-height);
+  height: var(--navbar-height);
+  font-size: calc(var(--navbar-height) / 4);
+}
+
+.mode-button {
+  position: absolute;
+  bottom: 0;
+}
+
+.mode-button:hover .button-icon,
+.mode-button:hover .button-text {
+  color: var(--accent-color);
+}

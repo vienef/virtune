@@ -1,0 +1,201 @@
+.illustration--line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: var(--transition);
+}
+
+.illustration--stroke {
+  fill: none;
+  stroke: var(--surface);
+  stroke-miterlimit: 10;
+}
+
+.illustration--stroke.light {
+  stroke: var(--high-emphasize);
+}
+
+.illustration--highlight {
+  fill: none;
+  stroke: var(--high-emphasize);
+}
+
+.illustration--highlight.light {
+  stroke: var(--surface);
+}
+
+.illustration--fixed-color {
+  fill: var(--high-emphasize);
+}
+
+.illustration--fixed-color.light {
+  fill: var(--surface);
+}
+
+.illustration--surface {
+  fill: var(--surface);
+  transition: var(--transition);
+}
+
+.illustration--high-emphasize {
+  fill: var(--high-emphasize);
+  transition: var(--transition);
+}
+
+.illustration--accent-color {
+  fill: var(--accent-color);
+  transition: var(--transition);
+}
+
+#illustration {
+  height: var(--notice-img-height, 100%);
+  width: auto;
+  animation: neon 3s ease-out infinite alternate;
+}
+
+#background {
+  transform-origin: 254.785px 250.609px;
+  animation:
+    fadeIn 1s cubic-bezier(.36,-0.01,.5,1.38) 1 forwards,
+    wind 6s infinite linear;
+  animation-delay: 0s, 1s;
+}
+
+#lines {
+  transform-origin: 210.645px 185.01px;
+  animation:
+    slideDown 1s cubic-bezier(.36,-0.01,.5,1.38) 1 forwards,
+    wind 3s infinite linear;
+  animation-delay: 0s, 1s;
+}
+
+#interface--left {
+  transform-origin: 147.785px 311.895px;
+  animation:
+    slideDown 1s cubic-bezier(.36,-0.01,.5,1.38) 1 forwards,
+    floating 3s infinite linear;
+  animation-delay: 0s, 1s;
+}
+
+#interface--middle {
+  transform-origin: 191.765px 151.895px;
+  animation:
+    slideDown 1s cubic-bezier(.36,-0.01,.5,1.38) 1 forwards,
+    floating 6s infinite linear;
+  animation-delay: 0s, 1s;
+}
+
+#interface--right {
+  transform-origin: 358.325px 205.435px;
+  animation:
+    slideDown 1s cubic-bezier(.36,-0.01,.5,1.38) 1 forwards,
+    wind 1.5s infinite linear;
+  animation-delay: 0s, 1s;
+}
+
+#desktop {
+  transform-origin: 240.97px 460.645px;
+}
+
+#character {
+  transform-origin: 318.301px 358.155px;
+  animation:
+    slideRight 1s cubic-bezier(.36,-0.01,.5,1.38) 1 forwards,
+    shake 6s infinite linear;
+    animation-delay: 0s, 1s;
+}
+
+#device {
+  transform-origin: 175.824px 434.17px;
+  animation: slideUp 1s cubic-bezier(.36,-0.01,.5,1.38) 1 forwards;
+  animation-delay: 0s;
+}
+
+#plant {
+  transform-origin: 78.5909px 401.095px;
+  animation: slideLeft 1s cubic-bezier(.36,-0.01,.5,1.38) 1 forwards;
+  animation-delay: 0s;
+}
+
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 5vh var(--accent-color));
+  }
+  to {
+    filter: drop-shadow(0 0 10vh var(--accent-color));
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+}
+
+@keyframes wind {
+  0% { transform: rotate( 0deg ); }
+  25% { transform: rotate( 1deg ); }
+  75% { transform: rotate( -1deg ); }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% { transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

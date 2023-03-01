@@ -1,0 +1,50 @@
+.miniplayer {
+  padding: calc(var(--main-padding) / 4);
+  width: var(--miniplayer-width);
+  height: var(--miniplayer-height);
+  position: absolute;
+  right: calc(var(--main-padding) + var(--scrollbar-width));
+  bottom: 0;
+  z-index: 1;
+  background-color: var(--status-bar);
+  border-radius: var(--border-radius);
+}
+
+.miniplayer.shadow--dark {
+  box-shadow: 0 0 var(--border-radius) var(--status-bar);
+}
+
+.miniplayer .visualizer-picture {
+  height: 100%;
+}
+
+.miniplayer .player-button {
+  margin: 0;
+  opacity: 0;
+}
+
+.miniplayer:hover .player-button,
+.miniplayer .player-button:focus {
+  opacity: 1;
+}
+
+.miniplayer .light-button {
+  background-color: inherit;
+}
+
+.miniplayer .light-button:hover,
+.miniplayer .light-button:focus {
+  color: var(--status-bar);
+  background-color: var(--high-emphasize);
+}
+
+.miniplayer-list {
+  display: flex;
+  justify-content: space-between;
+  padding: calc(var(--miniplayer-width) / (var(--miniplayer-multiplier) * 16));
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: var(--transition);
+}

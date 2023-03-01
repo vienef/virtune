@@ -1,0 +1,63 @@
+/*Collection*/
+.collection-info {
+  margin-top: var(--font-size);
+  overflow: hidden;
+}
+
+.collection-info .content-title,
+.playlist-info .content-title,
+.playback-info .content-title {
+  margin-bottom: calc(var(--font-size) / 2);
+  font-weight: 700;
+}
+
+.collection-info .content-description {
+  color: var(--medium-emphasize);
+}
+
+/*Visualizer*/
+.visualizer-info {
+  margin-left: var(--main-padding);
+  width: calc(100% - (var(--visualizer-height) - var(--main-padding)));
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.visualizer-info .content-title {
+  margin: 0 0 var(--main-padding) -5px;
+  font-weight: 700;
+  font-size: calc(var(--font-size) * 10 / 1.5);
+}
+
+.visualizer-info .content-description,
+.playlist-info .content-description,
+.playback-info .content-description {
+  font-size: calc(var(--font-size) * .9);
+  color: var(--medium-emphasize);
+}
+
+/*Playlist*/
+.playlist-info {
+  overflow: hidden;
+}
+
+/*Playback*/
+.playback-info {
+  width: var(--playback-info-width);
+  overflow: hidden;
+}
+
+/*General*/
+.content-title, .content-description {
+  width: max-content;
+}
+
+.content-length {
+  color: var(--high-emphasize);
+}
+
+.content-note {
+  display: block;
+  margin-bottom: calc(var(--main-padding) / 2);
+  font-size: calc(var(--font-size) * 1.25);
+}

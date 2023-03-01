@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Uncial+Antiqua&display=swap');
+
+/*General*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: var(--high-emphasize);
+  border-radius: calc(var(--scrollbar-width) * .5);
+  transition: var(--transition);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--medium-emphasize);
+}
+
+/*Ids*/
+#root {
+  height: 100vh;
+  font-size: var(--font-size);
+  color: var(--high-emphasize);
+  background-color: inherit;
+  overflow: hidden;
+}
+
+/*Classes*/
+.library-main {
+  margin-left: var(--main-margin);
+  width: var(--main-width);
+  position: relative;
+  z-index: 2;
+}
+
+.equalizer-main,
+.search-main,
+.profile-main {
+  margin-left: var(--main-margin);
+  padding: var(--main-padding);
+  width: var(--notice-width, --main-width);
+}
+
+.full-size {
+  height: var(--main-height);
+  width: 100%;
+}
+
+.hidden {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.perfect-center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.shadow--dark {
+  box-shadow: 0 0 var(--border-radius) var(--surface);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shadow--light {
+  box-shadow: 0 0 var(--border-radius) var(--high-emphasize);
+}
+
+.spectrum,
+.spectrum-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.spectrum {
+  width: var(--spectrum-width);
+  height: var(--spectrum-height);
+}
+
+.spectrum-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/*Body*/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family:
+    'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+/*List*/
+li {
+  list-style-type: none;
+}
+
+/*Table*/
+table {
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: 400;
+}
+
+td {
+  height: var(--data-height);
+}
+
+/*Form*/
+input {
+  background-color: transparent;
+  appearance: none;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:disabled {
+  cursor: default;
+}
+
+input::-webkit-slider-thumb {
+  --size: calc(var(--scrollbar-width) * 2);
+  height: var(--size);
+  width: var(--size);
+  background-color: transparent;
+  border-radius: var(--scrollbar-width);
+  appearance: none;
+}
+
+/*Hyperlink & Button*/
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  transition: var(--transition);
+}
+
+a:focus {
+  color: var(--high-emphasize);
+}
+
+a:focus,
+button:focus {
+  background-color: var(--accent-color);
+  outline: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: var(--disabled);
+  cursor: default;
+}
+
+/*Multimedia*/
+img {
+  display: block;
 }

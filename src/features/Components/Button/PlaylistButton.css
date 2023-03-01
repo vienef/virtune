@@ -1,0 +1,35 @@
+.playlist-button {
+  --const: 1.25;
+  --radius: 50%;
+  --dimension: var(--size);
+  margin: 0 auto;
+  border-color: transparent;
+}
+
+.playlist-button.dark-button:focus,
+.option-button:focus {
+  color: var(--accent-color);
+  background-color: transparent;
+}
+
+.playlist-button.light-button:hover {
+  color: var(--high-emphasize);
+  background-color: transparent;
+}
+
+.playlist-button.light-button:focus {
+  color: var(--high-emphasize);
+  background-color: var(--accent-color);
+}
+
+.playlist-button.light-button:hover:disabled {
+  color: var(--disabled);
+}
+
+.option-button {
+  opacity: 0;
+}
+
+.option-button:focus {
+  opacity: 1;
+}

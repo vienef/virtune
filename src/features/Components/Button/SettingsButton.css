@@ -1,0 +1,44 @@
+.settings-button,
+.settings-button--desktop {
+  --constant: var(--settings-button-constant);
+  background-color: var(--playback-settings-background);
+  opacity: var(--playback-settings-opacity);
+  transition: var(--transition);
+}
+
+.settings-button {
+  --radius: var(--playback-settings-padding);
+  --dimension: var(--playback-settings-size);
+  padding:
+    calc(var(--playback-settings-padding) * .5)
+    var(--playback-settings-padding);
+}
+
+.settings-button--desktop {
+  --radius: 50%;
+  --dimension: var(--size);
+  padding: calc(var(--font-size) * .75);
+}
+
+.settings-button--desktop.light-button,
+.settings-button--desktop.light-button:hover {
+  border-color: transparent;
+}
+
+.settings-button:hover,
+.settings-button:focus,
+.settings-button--desktop:hover,
+.settings-button--desktop:focus {
+  opacity: 1;
+}
+
+.settings-button.light-button.button--on {
+  color: var(--background);
+  background-color: var(--high-emphasize);
+  border-color: var(--high-emphasize);
+}
+
+.settings-button--desktop.light-button:hover {
+  color: var(--high-emphasize);
+  background-color: transparent;
+}

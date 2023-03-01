@@ -1,0 +1,36 @@
+header {
+  width: var(--navbar-width);
+  height: var(--navbar-height);
+  position: absolute;
+  z-index: 3;
+  bottom: var(--navbar-bottom);
+  background-color: var(--status-bar);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+header:hover {
+  width: var(--navbar-width-extended);
+}
+
+header:hover .button-text {
+  opacity: 1;
+}
+
+h1 {
+  width: var(--navbar-width);
+  height: var(--navbar-width);
+  font-size: var(--navbar-heading-size);
+  font-family: 'Uncial Antiqua', cursive;
+}
+
+.navbar-navigation {
+  height: var(--navbar-navigation-height);
+  position: relative;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: var(--navbar-list-justify);
+}

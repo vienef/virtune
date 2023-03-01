@@ -1,0 +1,15 @@
+.player-button {
+  --constant: 1.5;
+  --radius: var(--border-radius);
+  --dimension: var(--size);
+  margin-left: var(--font-size);
+  padding: calc(var(--font-size) * 1.25);
+  background-color: var(--background);
+}
+
+#list-button {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

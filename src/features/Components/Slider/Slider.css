@@ -1,0 +1,98 @@
+/*Duration*/
+.duration-slider {
+  margin: 0 calc(var(--font-size) * .8);
+}
+
+.duration-slider:hover .duration-input:disabled::-webkit-slider-thumb {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.duration-slider .slider-background {
+  width: 100%;
+  height: 100%;
+}
+
+.duration-input {
+  width: 100%;
+}
+
+/*Volume*/
+.volume-slider {
+  justify-content: space-between;
+}
+
+.volume-slider .slider-background {
+  width: calc(100% - var(--font-size) * 1.75);
+  height: calc(var(--scrollbar-width) * 2 / 3);
+  right: 0;
+}
+
+.volume-input {
+  width: calc(100% - var(--font-size) * 1.75);
+}
+
+/*General*/
+.slider--dark,
+.slider--light {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  border-radius: calc(var(--scrollbar-width) * 4 / 3);
+}
+
+.slider--dark input,
+.slider--light input {
+  height: calc(var(--scrollbar-width) * 2 / 3);
+  position: relative;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.slider--dark:hover input::-webkit-slider-thumb {
+  background-color: var(--high-emphasize);
+  box-shadow: 0 0 calc(var(--border-radius) / 2) var(--surface);
+  transition: var(--transition);
+}
+
+.slider--light:hover input::-webkit-slider-thumb {
+  background-color: var(--app-bar);
+  box-shadow: 0 0 calc(var(--border-radius) / 2) var(--high-emphasize);
+  transition: var(--transition);
+}
+
+.slider--dark input:hover ~ .slider-background .slider-track,
+.slider--light input:hover ~ .slider-background .slider-track,
+.slider--dark input:focus ~ .slider-background .slider-track,
+.slider--light input:focus ~ .slider-background .slider-track {
+  background-color: var(--accent-color);
+  transition: var(--transition);
+}
+
+.slider--dark input:disabled ~ .slider-background,
+.slider--light input:disabled ~ .slider-background {
+  background-color: var(--disabled);
+}
+
+.slider--dark .slider-background {
+  background-color: var(--medium-emphasize);
+}
+
+.slider--light .slider-background {
+  background-color: var(--status-bar);
+}
+
+.slider-background {
+  position: absolute;
+  border-radius: inherit;
+  transition: var(--transition);
+}
+
+.slider-track {
+  display: block;
+  height: 100%;
+  background-color: var(--high-emphasize);
+  border-radius: inherit;
+  transition: var(--transition);
+}

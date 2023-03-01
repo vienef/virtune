@@ -1,13 +1,253 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  /*General*/
+  --scrollbar-width: .75vh;
+  --font-size-multiplier: 1;
+  --font-size: calc(var(--font-size-multiplier) * 1.5vh);
+  --background-width: 100%;
+  --background-height: auto;
+  --border-radius: calc(var(--font-size) * .5);
+  --transition: all .25s ease-out;
+  --accent-code: 79, 0, 255;
+  --accent-color: rgb(var(--accent-code));
+  --accent-color-light: rgba(var(--accent-code), .25);
+  /*Button*/
+  --button-border: calc(var(--font-size) / 4) solid;
+  --duration-button-constant: 1.5;
+  --queue-button-constant: var(--duration-button-constant);
+  --track-button-constant: var(--duration-button-constant);
+  --play-button-constant: 2.25;
+  --settings-button-constant: 1;
+  /*Table*/
+  --data-width-small: 7.5vh;
+  --data-width-medium: 25vh;
+  --data-height: calc(var(--font-size-multiplier) * 10vh);
+  /*Main*/
+  --main-margin: var(--navbar-width);
+  --main-padding: 4vh;
+  --main-width: calc(100% - var(--navbar-width));
+  --main-height: var(--navbar-height);
+  /*Navbar*/
+  --navbar-width: 7.5vh;
+  --navbar-width-extended: 25.75vh;
+  --navbar-height: calc(100vh - var(--playback-height));
+  --navbar-heading-size: calc(var(--navbar-width) / 3);
+  --navbar-navigation-height: calc(100% - var(--navbar-width));
+  --navbar-icon-height: calc(var(--font-size-multiplier) * 5vh);
+  /*Collection*/
+  --collection-column: 9;
+  /*Visualizer*/
+  --visualizer-height: 37.5vh;
+  --visualizer-picture-height: 100%;
+  --visualizer-navigation-desktop: var(--main-padding);
+  --spectrum-width: var(--main-width);
+  --spectrum-height: var(--visualizer-height);
+  /*Playlist*/
+  --playlist-height: calc(100% - var(--visualizer-height));
+  /*Miniplayer*/
+  --miniplayer-multiplier: 3;
+  --miniplayer-width: calc(var(--miniplayer-multiplier) * 16vh);
+  --miniplayer-height: calc(var(--miniplayer-multiplier) * 9vh);
+  /*Playback*/
+  --playback-padding:
+    calc(var(--main-padding) / 4)
+    calc(var(--main-padding) / 2);
+  --playback-width: 100%;
+  --playback-height: 9.75vh;
+  --playback-index: 3;
+  --playback-background: var(--app-bar);
+  --playback-border: .125vh solid var(--surface);
+  --playback-side-width: 20vh;
+  --playback-side-height: 100%;
+  --playback-center-direction: column;
+  --playback-center-align: center;
+  --playback-center-width: 60vh;
+  --playback-center-height: 100%;
+  --playback-settings-margin: 0 calc(var(--font-size) / 4) 0 0;
+  --playback-info-width:
+    calc(100% - var(--playback-height) + var(--main-padding) / 2);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media only screen and (orientation: landscape) and (max-aspect-ratio: 3/2),
+only screen and (orientation: landscape) and (max-height: 600px),
+only screen and (orientation: portrait) {
+  html {
+    /*Visualizer*/
+    --visualizer-height: 100%;
+    /*Playlist*/
+    --playlist-position: absolute;
+    --playlist-index: 1;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-aspect-ratio: 3/2),
+only screen and (orientation: portrait) {
+  html {
+    /*General*/
+    --background-width: auto;
+    --background-height: 100%;
+    /*Main*/
+    --notice-direction: column-reverse;
+    --notice-div-align: center;
+    --notice-div-width: 100%;
+    --notice-img-height: 50%;
+    --notice-text-align: center;
+    /*Playlist*/
+    --playlist-edge: 0;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-aspect-ratio: 3/2),
+only screen and (orientation: landscape) and (max-height: 600px) {
+  html {
+    /*Collection*/
+    --collection-column: 4;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 600px),
+only screen and (orientation: portrait) {
+  html {
+    /*Table*/
+    --data-title-width:
+      calc(100vw - (
+        var(--data-width-small) * 2 +
+        var(--data-height) +
+        var(--navbar-icon-height) +
+        var(--main-padding) * 2
+      ));
+    /*Main*/
+    --main-margin: 0;
+    --main-padding: 2vh;
+    --main-height: calc(100vh - var(--navbar-height));
+    /*Navbar*/
+    --navbar-width: 100%;
+    --navbar-width-extended: var(--navbar-width);
+    --navbar-height: calc(var(--font-size-multiplier) * 10vh - 5vh);
+    --navbar-bottom: 0;
+    --navbar-navigation-height: auto;
+    /*Visualizer*/
+    --visualizer-navigation-desktop: auto;
+    --visualizer-navigation-mobile: var(--main-padding);
+    /*Playlist*/
+    --playlist-width: 100vw;
+    --playlist-height: calc(100vh - var(--navbar-height));
+    /*Playback*/
+    --playback-bottom: var(--navbar-height);
+    --playback-index: 1;
+    --playback-background: transparent;
+    --playback-border: none;
+    --playback-side-width: 100%;
+    --playback-side-height: 10%;
+    --playback-center-direction: row;
+    --playback-center-align: flex-end;
+    --playback-center-self: center;
+    --playback-center-padding: calc(var(--font-size) * .5);
+    --playback-center-width: 100%;
+    --playback-center-height: 50%;
+    --playback-center-background: var(--status-bar);
+    --playback-settings-margin: 0 0 0 var(--font-size);
+    --playback-settings-height: 100%;
+    --playback-settings-background: var(--app-bar);
+    --playback-settings-opacity: .75;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-aspect-ratio: 3/2) {
+  html {
+    /*Table*/
+    --data-title-width: 
+      calc(100vw - (
+        var(--data-width-small) * 2 +
+        var(--data-height) +
+        var(--navbar-icon-height) +
+        var(--navbar-width) +
+        var(--main-padding) * 2
+      ));
+    /*Visualizer*/
+    --visualizer-picture-height: auto;
+    --visualizer-navigation-width: calc(100% - var(--navbar-width));
+    /*Playlist*/
+    --playlist-height: calc(100vh - var(--playback-height));
+    /*Playback*/
+    --playback-center-width: 50vh;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  html {
+    /*Button*/
+    --settings-button-constant: 1.5;
+    /*General*/
+    --font-size-multiplier: 2;
+    /*Button*/
+    --track-button-constant: 2;
+    --play-button-constant: 2.5;
+    /*Table*/
+    --data-width-small: 15vh;
+    --data-width-medium: 50vh;
+    /*Main*/
+    --main-width: fit-content;
+    --notice-width: 100%;
+    /*Navbar*/
+    --navbar-list-justify: space-evenly;
+    /*Visualizer*/
+    --spectrum-width: 100vw;
+    --spectrum-height: var(--playback-height);
+    /*Playlist*/
+    --playlist-edge: calc((100vw - var(--main-height)) * -1);
+    /*Miniplayer*/
+    --miniplayer-multiplier: 4;
+    /*Playback*/
+    --playback-direction: column;
+    --playback-padding:
+      var(--main-padding) var(--main-padding) var(--main-padding) 0;
+    --playback-width: calc(100% - var(--main-height));
+    --playback-height: calc(100% - var(--navbar-height));
+    --playback-right: 0;
+    --playback-settings-padding:
+      calc(
+        (100vh - var(--navbar-height)) *
+        var(--settings-button-constant) *
+        .05
+      );
+    --playback-info-width: 100%;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  html {
+    /*Button*/
+    --settings-button-constant: 1.25;
+    /*General*/
+    --font-size-multiplier: 1.5;
+    /*Button*/
+    --duration-button-constant: 1.25;
+    --track-button-constant: 1.5;
+    --play-button-constant: 1.75;
+    /*Table*/
+    --data-width-small: 11.25vh;
+    --data-width-medium: 37.5vh;
+    /*Main*/
+    --main-width: 100%;
+    --main-height-shrinked: var(--playback-height);    
+    --notice-font-size: calc(var(--font-size) * 2.5);
+    /*Navbar*/
+    --navbar-list-justify: space-around;
+    /*Collection*/
+    --collection-column: 2;
+    /*Visualizer*/
+    --visualizer-navigation-width: calc(100% - var(--main-padding) * 2);
+    /*Miniplayer*/
+    --miniplayer-multiplier: 2;
+    /*Playback*/
+    --playback-direction: column-reverse;
+    --playback-padding: 0 var(--main-padding);
+    --playback-height: calc((100% - var(--navbar-height)) / 2);
+    --playback-settings-padding:
+      calc(
+        (100vh - var(--navbar-height)) *
+        var(--settings-button-constant) *
+        .025
+      );
+  }
 }

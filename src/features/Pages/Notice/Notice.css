@@ -1,0 +1,67 @@
+.notice {
+  display: flex;
+  flex-direction: var(--notice-direction);
+  justify-content: var(--notice-justify, space-around);
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.notice div {
+  display: flex;
+  flex-direction: column;
+  align-items: var(--notice-div-align);
+  width: var(--notice-div-width, 40%);
+}
+
+.notice h2 {
+  font-size: var(--notice-font-size, calc(var(--font-size) * 5));
+  line-height: initial;
+  text-align: var(--notice-text-align);
+}
+
+.notice p {
+  margin: calc(var(--font-size) * 2) 0;
+  font-size: var(--font-size);
+  line-height: initial;
+}
+
+.notice a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: calc(var(--font-size) * .75);
+  color: var(--high-emphasize);
+}
+
+.go-back-button {
+  padding: var(--font-size);
+  width: fit-content;
+  font-weight: 700;
+  font-size: var(--font-size);
+  border: var(--button-border);
+  border-radius: var(--font-size);
+}
+
+.go-back-button.dark-button {
+  text-shadow: 0 0 var(--font-size) var(--background);
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+
+.go-back-button.dark-button:hover,
+.go-back-button.dark-button:focus {
+  color: var(--accent-color);
+  background-color: var(--high-emphasize);
+}
+
+.go-back-button.light-button {
+  background-color: var(--background);
+}
+
+.go-back-button.light-button:hover,
+.go-back-button.light-button:focus {
+  background-color: var(--high-emphasize);
+  border-color: transparent;
+}
