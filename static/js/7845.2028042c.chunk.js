@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[7845],{7845:function(e,t,i){e.exports=i.p+"static/media/thykier_shimmer.20eb7e3b7a304922f0d8.mp3"}}]);

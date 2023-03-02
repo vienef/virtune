@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[210],{210:function(e,t,a){e.exports=a.p+"static/media/wateva_get_$.9de0e8f6d49a6df0522e.mp3"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[8145],{8145:function(e,t,i){e.exports=i.p+"static/media/ifeature_insanity.4154775498c180e8c449.mp3"}}]);

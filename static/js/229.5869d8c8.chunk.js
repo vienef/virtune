@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[229],{229:function(e,t,c){e.exports=c.p+"static/media/halvorsen_phoenix_(but_it's_punk_rock).c37c154021779d70c225.mp3"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[152],{152:function(e,s,t){e.exports=t.p+"static/media/last_heroes_eclipse.0d11e47319d5162d963e.mp3"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[2845],{2845:function(e,a,t){e.exports=t.p+"static/media/dirty_palm_legacy.a3167011e6afc0760da6.mp3"}}]);

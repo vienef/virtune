@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[806],{806:function(e,t,n){e.exports=n.p+"static/media/jpb_long_night.0cdaa4670d0b6d79fef8.mp3"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[3260],{3260:function(a,e,t){a.exports=t.p+"static/media/asketa_&_natan_chaim_warriors.cc9a136ea017238e66d7.mp3"}}]);

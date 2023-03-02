@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[8939],{8939:function(e,t,a){e.exports=a.p+"static/media/fabian_mazur_elevate.c1c683b03d095145857e.mp3"}}]);

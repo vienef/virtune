@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[1500],{1500:function(e,i,s){e.exports=s.p+"static/media/vosai_love_of_my_life.21d1afbd0370ef31beb5.mp3"}}]);

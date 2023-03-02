@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[4579],{4579:function(e,t,i){e.exports=i.p+"static/media/doctor_neiman_wait_for_me.3899b2e7d05a1f25fe6d.mp3"}}]);

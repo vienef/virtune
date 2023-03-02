@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[646],{646:function(e,c,b){e.exports=b.p+"static/media/simbai_crazy.ed3893bcb8bca5743cbb.mp3"}}]);

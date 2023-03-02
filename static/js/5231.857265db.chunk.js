@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[5231],{5231:function(e,t,a){e.exports=a.p+"static/media/beave_talk.1a2088c6bd553327baf4.mp3"}}]);

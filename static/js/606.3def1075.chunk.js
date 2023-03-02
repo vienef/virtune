@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[606],{606:function(e,t,i){e.exports=i.p+"static/media/wide_awake_something_more.70fc0145d802d1d7b137.mp3"}}]);

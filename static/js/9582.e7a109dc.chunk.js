@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[9582],{9582:function(e,n,s){e.exports=s.p+"static/media/manshn_online.254f51b2026a1bd5f94b.mp3"}}]);

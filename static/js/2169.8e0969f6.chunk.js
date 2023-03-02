@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[2169],{2169:function(e,i,t){e.exports=t.p+"static/media/thykier_inferior.95c28af3264f4e26baf7.mp3"}}]);

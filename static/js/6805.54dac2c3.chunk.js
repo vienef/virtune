@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[6805],{6805:function(e,t,f){e.exports=f.p+"static/media/goodknight_freedom.111f038a495d3fa0f2c3.mp3"}}]);

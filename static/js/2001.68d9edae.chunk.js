@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[2001],{2001:function(e,t,c){e.exports=c.p+"static/media/wbn_radio.244c06442837a6ce1666.mp3"}}]);

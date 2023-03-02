@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[6018],{6018:function(e,t,s){e.exports=s.p+"static/media/jonth_collapse.d4a6a1086c775ddd64e4.mp3"}}]);

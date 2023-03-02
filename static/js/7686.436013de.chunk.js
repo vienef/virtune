@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvirtune=self.webpackChunkvirtune||[]).push([[7686],{7686:function(e,u,t){e.exports=t.p+"static/media/reaubeau_for_you.df0c114eb052462203ca.mp3"}}]);
