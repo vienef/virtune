@@ -20,7 +20,7 @@ html {
   /*Table*/
   --data-width-small: 7.5vh;
   --data-width-medium: 25vh;
-  --data-height: calc(var(--font-size-multiplier) * 10vh);
+  --data-height: calc(var(--font-size-multiplier) * 10vmin);
   /*Main*/
   --main-margin: var(--navbar-width);
   --main-padding: 4vh;
@@ -65,12 +65,15 @@ html {
   --playback-settings-margin: 0 calc(var(--font-size) / 4) 0 0;
   --playback-info-width:
     calc(100% - var(--playback-height) + var(--main-padding) / 2);
+  overflow: hidden;
 }
 
 @media only screen and (orientation: landscape) and (max-aspect-ratio: 3/2),
 only screen and (orientation: landscape) and (max-height: 600px),
 only screen and (orientation: portrait) {
   html {
+    /*General*/
+    --scrollbar-display: none;
     /*Visualizer*/
     --visualizer-height: 100%;
     /*Playlist*/
@@ -221,9 +224,9 @@ only screen and (orientation: portrait) {
     /*General*/
     --font-size-multiplier: 1.5;
     /*Button*/
-    --duration-button-constant: 1.25;
-    --track-button-constant: 1.5;
-    --play-button-constant: 1.75;
+    --duration-button-constant: 1;
+    --track-button-constant: 1.25;
+    --play-button-constant: 1.5;
     /*Table*/
     --data-width-small: 11.25vh;
     --data-width-medium: 37.5vh;

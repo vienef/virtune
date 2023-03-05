@@ -11,6 +11,7 @@
 
 /*Scrollbar*/
 ::-webkit-scrollbar {
+  display: var(--scrollbar-display);
   width: var(--scrollbar-width);
 }
 

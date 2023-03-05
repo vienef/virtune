@@ -13,7 +13,7 @@
 .playlist .player-button {
   margin: 0;
   position: fixed;
-  right: calc(var(--main-padding) + var(--scrollbar-width));
+  right: var(--main-padding);
 }
 
 .playlist .player-button.light-button {

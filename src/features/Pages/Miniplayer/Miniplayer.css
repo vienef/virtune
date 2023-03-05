@@ -20,12 +20,6 @@
 
 .miniplayer .player-button {
   margin: 0;
-  opacity: 0;
-}
-
-.miniplayer:hover .player-button,
-.miniplayer .player-button:focus {
-  opacity: 1;
 }
 
 .miniplayer .light-button {

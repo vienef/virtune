@@ -9,15 +9,6 @@
   transition: var(--transition);
 }
 
-.visualizer-portrait .player-button {
-  opacity: 0;
-}
-
-.visualizer-portrait:hover .player-button,
-.visualizer-portrait .player-button:focus {
-  opacity: 1;
-}
-
 .visualizer-portrait .visualizer-info {
   display: flex;
   flex-direction: column;
