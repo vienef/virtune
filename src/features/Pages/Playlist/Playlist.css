@@ -89,7 +89,7 @@
 }
 
 .data-duration {
-  width: var(--navbar-icon-height);
+  width: var(--data-duration-width, --navbar-icon-height);
   text-align: right;
 }
 

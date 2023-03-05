@@ -18,7 +18,7 @@ html {
   --play-button-constant: 2.25;
   --settings-button-constant: 1;
   /*Table*/
-  --data-width-small: 7.5vh;
+  --data-width-small: 7.5vmin;
   --data-width-medium: 25vh;
   --data-height: calc(var(--font-size-multiplier) * 10vmin);
   /*Main*/
@@ -111,6 +111,7 @@ only screen and (orientation: landscape) and (max-height: 600px) {
 only screen and (orientation: portrait) {
   html {
     /*Table*/
+    --data-min-height: 15vmin;
     --data-title-width:
       calc(100vw - (
         var(--data-width-small) * 2 +
@@ -118,6 +119,7 @@ only screen and (orientation: portrait) {
         var(--navbar-icon-height) +
         var(--main-padding) * 2
       ));
+    --data-duration-width: 5vmin;
     /*Main*/
     --main-margin: 0;
     --main-padding: 2vh;
@@ -161,7 +163,7 @@ only screen and (orientation: portrait) {
     --data-title-width: 
       calc(100vw - (
         var(--data-width-small) * 2 +
-        var(--data-height) +
+        var(--data-height) * .5 +
         var(--navbar-icon-height) +
         var(--navbar-width) +
         var(--main-padding) * 2

@@ -120,6 +120,7 @@ th {
 }
 
 td {
+  min-height: var(--data-min-height, initial);
   height: var(--data-height);
 }
 

@@ -35,7 +35,7 @@
   max-height: 440px;
   width: auto;
   height: 100%;
-  border-radius: var(--border-radius);
+  border-radius: inherit;
 }
 
 /*Playlist*/
