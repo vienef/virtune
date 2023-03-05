@@ -111,15 +111,15 @@ only screen and (orientation: landscape) and (max-height: 600px) {
 only screen and (orientation: portrait) {
   html {
     /*Table*/
-    --data-min-height: 15vmin;
+    --data-min-height: 20vmin;
     --data-title-width:
       calc(100vw - (
-        var(--data-width-small) * 2 +
+        var(--data-width-small) * 2.25 +
         var(--data-height) +
-        var(--navbar-icon-height) +
         var(--main-padding) * 2
       ));
     --data-duration-width: 5vmin;
+    --data-width-small: var(--data-duration-width);
     /*Main*/
     --main-margin: 0;
     --main-padding: 2vh;
@@ -162,8 +162,8 @@ only screen and (orientation: portrait) {
     /*Table*/
     --data-title-width: 
       calc(100vw - (
-        var(--data-width-small) * 2 +
-        var(--data-height) * .5 +
+        var(--data-width-small) +
+        var(--data-height) +
         var(--navbar-icon-height) +
         var(--navbar-width) +
         var(--main-padding) * 2

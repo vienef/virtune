@@ -69,13 +69,18 @@
 }
 
 .data-queue {
-  width: var(--data-width-small);
+  width: calc(var(--data-width-small) * .5);
   font-size: calc(var(--font-size) * 1.25);
   text-align: center;
 }
 
 .data-artwork {
   width: var(--data-height);
+}
+
+.data-artwork .playlist-image {
+  width: 75%;
+  height: auto;
 }
 
 .data-title,
@@ -94,7 +99,7 @@
 }
 
 .data-more {
-  width: var(--data-width-small);
+  width: calc(var(--data-width-small) * .5);
   font-size: calc(var(--font-size) * 1.5);
   text-align: center;
   transition: var(--transition);
