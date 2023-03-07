@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/virtune/static/css/main.48ac1f38.css",
-    "main.js": "/virtune/static/js/main.a0ad0fea.js",
+    "main.css": "/virtune/static/css/main.14e58abe.css",
+    "main.js": "/virtune/static/js/main.c6d2efb2.js",
     "static/js/6247.9986db17.chunk.js": "/virtune/static/js/6247.9986db17.chunk.js",
     "static/js/7072.7cdfd4c0.chunk.js": "/virtune/static/js/7072.7cdfd4c0.chunk.js",
     "static/js/3260.8e49cf71.chunk.js": "/virtune/static/js/3260.8e49cf71.chunk.js",
@@ -197,7 +197,6 @@
     "static/media/heuse_daylight.png": "/virtune/static/media/heuse_daylight.391ff133946ff689b6c0.png",
     "static/media/chime_arcade_dwellers.webp": "/virtune/static/media/chime_arcade_dwellers.96d133945670d9f3c2b4.webp",
     "static/media/reaubeau_for_you.webp": "/virtune/static/media/reaubeau_for_you.83e89a1f72a74e0dce59.webp",
-    "static/media/virtune.png": "/virtune/static/media/virtune.69b72139ecb9fc6050bc.png",
     "static/media/ashley_apollodor_where_was_i.png": "/virtune/static/media/ashley_apollodor_where_was_i.20ad167f2a4907ebe31b.png",
     "static/media/doctor_neiman_wait_for_me.webp": "/virtune/static/media/doctor_neiman_wait_for_me.3cae69b17107b8fc68ad.webp",
     "static/media/johnning_what_the_hell_(oblvyn_remix).webp": "/virtune/static/media/johnning_what_the_hell_(oblvyn_remix).83b05ec82f3778a563eb.webp",
@@ -247,19 +246,19 @@
     "static/media/jpb_get_over_you.webp": "/virtune/static/media/jpb_get_over_you.5e19c62eeb88da31f3ac.webp",
     "static/media/feint_shockwave.webp": "/virtune/static/media/feint_shockwave.1709ffef4996aab28fab.webp",
     "static/media/ashley_apollodor_where_was_i.webp": "/virtune/static/media/ashley_apollodor_where_was_i.57e5a7ee865bdd797df9.webp",
+    "static/media/virtune.webp": "/virtune/static/media/virtune.162e2a6f9dacbe0d2653.webp",
     "static/media/koven_never_have_i_felt_this.webp": "/virtune/static/media/koven_never_have_i_felt_this.7e07d0a51473b44f5914.webp",
-    "static/media/virtune.webp": "/virtune/static/media/virtune.ce49e4594389b5364fb6.webp",
     "static/media/thykier_inferior.webp": "/virtune/static/media/thykier_inferior.8f7d4af970dd4fcb1bcf.webp",
     "static/media/thykier_outside.webp": "/virtune/static/media/thykier_outside.8f7d4af970dd4fcb1bcf.webp",
     "static/media/thykier_shimmer.webp": "/virtune/static/media/thykier_shimmer.8f7d4af970dd4fcb1bcf.webp",
     "static/media/epic_energetic.webp": "/virtune/static/media/epic_energetic.e2de36d80a5f10d1dccb.webp",
     "index.html": "/virtune/index.html",
-    "main.48ac1f38.css.map": "/virtune/static/css/main.48ac1f38.css.map",
-    "main.a0ad0fea.js.map": "/virtune/static/js/main.a0ad0fea.js.map",
+    "main.14e58abe.css.map": "/virtune/static/css/main.14e58abe.css.map",
+    "main.c6d2efb2.js.map": "/virtune/static/js/main.c6d2efb2.js.map",
     "787.12769316.chunk.js.map": "/virtune/static/js/787.12769316.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48ac1f38.css",
-    "static/js/main.a0ad0fea.js"
+    "static/css/main.14e58abe.css",
+    "static/js/main.c6d2efb2.js"
   ]
 }
