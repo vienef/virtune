@@ -24,13 +24,15 @@
 }
 
 /*Visualizer*/
-.visualizer-picture {
+.visualizer-picture,
+.default-picture {
   height: var(--visualizer-picture-height);
   border-radius: var(--border-radius);
   transition: var(--transition);
 }
 
-.visualizer-image {
+.visualizer-image,
+.default-image {
   max-width: 440px;
   max-height: 440px;
   width: auto;

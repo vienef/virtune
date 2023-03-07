@@ -1,4 +1,5 @@
 import { useThemeContext } from '../../Contexts/ThemeContext';
+import { DefaultArtwork } from '../Artwork/Artwork';
 import { linkList, LinkButton } from '../Button/LinkButton';
 import ModeButton from '../Button/ModeButton';
 import './Navbar.css';
@@ -9,6 +10,12 @@ export default function Navbar({ page, isDesktop, handleLinkClick }) {
   const headerClass = isDesktop ? `shadow--${theme}` : '';
   const headingClass = isDesktop ? 'perfect-center' : 'hidden';
   const listClass = isDesktop ? '' : 'navbar-list';
+
+  const iconStyle = {
+    filter: theme === 'dark'
+      ? 'invert(100%)'
+      : 'invert(0)'
+  };
 
   const linkButtons = linkList.map(li => (
     <li key={li}>
@@ -24,7 +31,12 @@ export default function Navbar({ page, isDesktop, handleLinkClick }) {
 
   return (
     <header className={headerClass}>
-      <h1 className={headingClass} aria-label='Virtune'>vt</h1>
+      <h1 className={headingClass} aria-label='Virtune'>
+        <span className='navbar-icon'>
+          <DefaultArtwork style={iconStyle} />
+        </span>
+        <span className='navbar-heading'>virtune</span>
+      </h1>
       <nav className='navbar-navigation'>
         <ul className={listClass}>
           {linkButtons}

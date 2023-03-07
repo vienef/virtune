@@ -6,7 +6,7 @@ function Artwork({ content, ...props }) {
   const theme = useThemeContext();
   const { name, artwork, description } = content;
   const classes = name === 'background' ? 'perfect-center' : '';
-  const mode = name === 'visualizer' ? `shadow--${theme}` : '';
+  const mode = name === 'visualizer' || name === 'default' ? `shadow--${theme}` : '';
   const picture = `${classes} ${name}-picture ${mode}`;
   const img = `${name}-image`;
   const alt = `Artwork: ${description}`;
@@ -22,14 +22,14 @@ function Artwork({ content, ...props }) {
   );
 }
 
-export function DefaultArtwork() {
+export function DefaultArtwork({...props}) {
   const content = {
-    name: 'visualizer',
+    name: 'default',
     artwork: 'virtune',
     description: 'Virtune logo.'
   };
 
-  return <Artwork content={content} />;
+  return <Artwork content={content} {...props} />;
 }
 
 export function BackgroundArtwork({ song, ...props }) {

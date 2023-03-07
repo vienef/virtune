@@ -13,18 +13,29 @@ header:hover {
   width: var(--navbar-width-extended);
 }
 
+header:hover .navbar-heading,
 header:hover .button-text {
   opacity: 1;
 }
 
 h1 {
+  position: absolute;
+}
+
+.navbar-icon {
   width: var(--navbar-width);
   height: var(--navbar-width);
+}
+
+.navbar-heading {
   font-size: var(--navbar-heading-size);
   font-family: 'Uncial Antiqua', cursive;
+  opacity: 0;
+  transition: var(--transition);
 }
 
 .navbar-navigation {
+  margin-top: var(--navbar-margin);
   height: var(--navbar-navigation-height);
   position: relative;
 }

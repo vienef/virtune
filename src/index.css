@@ -27,6 +27,7 @@ html {
   --main-width: calc(100% - var(--navbar-width));
   --main-height: var(--navbar-height);
   /*Navbar*/
+  --navbar-margin: var(--navbar-width);
   --navbar-width: 7.5vh;
   --navbar-width-extended: 25.75vh;
   --navbar-height: calc(100vh - var(--playback-height));
@@ -125,6 +126,7 @@ only screen and (orientation: portrait) {
     --main-padding: 2vh;
     --main-height: calc(100vh - var(--navbar-height));
     /*Navbar*/
+    --navbar-margin: 0;
     --navbar-width: 100%;
     --navbar-width-extended: var(--navbar-width);
     --navbar-height: calc(var(--font-size-multiplier) * 10vh - 5vh);
