@@ -27,7 +27,7 @@ export default function Navbar({ page, isDesktop, handleLinkClick }) {
     </li>
   ));
 
-  const modeButton = <li aria-hidden='true'><ModeButton /></li>;
+  const modeButton = <li><ModeButton /></li>;
 
   return (
     <header className={headerClass}>

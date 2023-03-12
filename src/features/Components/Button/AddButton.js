@@ -9,7 +9,7 @@ export default function AddButton() {
   const classes = `collection-button add-button ${theme}-button`;
 
   return (
-    <Button className={classes} disabled='true'>
+    <Button className={classes} disabled={true}>
       <ButtonContent content={content} />
     </Button>
   );
