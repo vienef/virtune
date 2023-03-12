@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/virtune/static/css/main.14e58abe.css",
-    "main.js": "/virtune/static/js/main.55ae5efa.js",
+    "main.js": "/virtune/static/js/main.5fc9cc52.js",
     "static/js/6247.9986db17.chunk.js": "/virtune/static/js/6247.9986db17.chunk.js",
     "static/js/7072.7cdfd4c0.chunk.js": "/virtune/static/js/7072.7cdfd4c0.chunk.js",
     "static/js/3260.8e49cf71.chunk.js": "/virtune/static/js/3260.8e49cf71.chunk.js",
@@ -134,6 +134,7 @@
     "static/media/rival_superhero_in_my_sleep.png": "/virtune/static/media/rival_superhero_in_my_sleep.2a493b8b50ba35ee3dae.png",
     "static/media/goodknight_freedom.webp": "/virtune/static/media/goodknight_freedom.a55e246acb487ee781ca.webp",
     "static/media/arc_north_symphony.webp": "/virtune/static/media/arc_north_symphony.05476f0e2dad7ec146f2.webp",
+    "static/media/app_preview.png": "/virtune/static/media/app_preview.a19e8e160740680f2bd4.png",
     "static/media/beave_talk.webp": "/virtune/static/media/beave_talk.c9518bb14a7630c885a1.webp",
     "static/media/simbai_crazy.webp": "/virtune/static/media/simbai_crazy.7c4416a09ddcbbbcfdf8.webp",
     "static/media/simbai_set_me_free.webp": "/virtune/static/media/simbai_set_me_free.0a770ca7d78dd7038e1e.webp",
@@ -254,11 +255,11 @@
     "static/media/epic_energetic.webp": "/virtune/static/media/epic_energetic.e2de36d80a5f10d1dccb.webp",
     "index.html": "/virtune/index.html",
     "main.14e58abe.css.map": "/virtune/static/css/main.14e58abe.css.map",
-    "main.55ae5efa.js.map": "/virtune/static/js/main.55ae5efa.js.map",
+    "main.5fc9cc52.js.map": "/virtune/static/js/main.5fc9cc52.js.map",
     "787.12769316.chunk.js.map": "/virtune/static/js/787.12769316.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14e58abe.css",
-    "static/js/main.55ae5efa.js"
+    "static/js/main.5fc9cc52.js"
   ]
 }
