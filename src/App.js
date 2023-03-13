@@ -186,7 +186,6 @@ export default function App() {
   const miniplayer = (
     <Miniplayer
       properties={{ orientation: display, track }}
-      isPlaying={isPlaying}
       handlers={{ handleMaximizeClick, handleCloseClick }}
     />
   );

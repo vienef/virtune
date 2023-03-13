@@ -27,11 +27,12 @@
 }
 
 .playlist .playlist-info {
-  width: var(--data-title-width);
+  width: 100%;
 }
 
 .playlist-table {
   width: 100%;
+  table-layout: fixed;
 }
 
 .playlist-header {
@@ -69,7 +70,6 @@
 }
 
 .data-queue {
-  width: calc(var(--data-width-small) * .5);
   font-size: calc(var(--font-size) * 1.25);
   text-align: center;
 }
@@ -84,22 +84,28 @@
 }
 
 .data-title,
+.data-genre,
 .data-album {
   text-align: left;
 }
 
+.data-title {
+  width: var(--data-title-width);
+}
+
 .data-genre {
-  width: var(--data-width-medium);
-  text-align: left;
+  width: 10%;
+}
+
+.data-album {
+  width: 35%;
 }
 
 .data-duration {
-  width: var(--data-duration-width, --navbar-icon-height);
   text-align: right;
 }
 
 .data-more {
-  width: calc(var(--data-width-small) * .5);
   font-size: calc(var(--font-size) * 1.5);
   text-align: center;
   transition: var(--transition);

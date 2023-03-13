@@ -29,6 +29,7 @@
 #root {
   height: 100vh;
   position: relative;
+  left: 0;
   font-size: var(--font-size);
   color: var(--high-emphasize);
   background-color: inherit;

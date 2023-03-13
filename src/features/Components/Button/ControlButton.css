@@ -4,7 +4,7 @@
 .play-button {
   --radius: 50%;
   --dimension: var(--size);
-  margin: 0 var(--font-size);
+  margin: 0 calc(var(--control-button-margin));
 }
 
 .desktop-button {

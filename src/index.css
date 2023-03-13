@@ -16,11 +16,11 @@ html {
   --queue-button-constant: var(--duration-button-constant);
   --track-button-constant: var(--duration-button-constant);
   --play-button-constant: 2.25;
+  --control-button-margin: var(--font-size);
   --settings-button-constant: 1;
   /*Table*/
-  --data-width-small: 7.5vmin;
-  --data-width-medium: 25vh;
   --data-height: calc(var(--font-size-multiplier) * 10vmin);
+  --data-title-width: 40%;
   /*Main*/
   --main-margin: var(--navbar-width);
   --main-padding: 4vh;
@@ -49,6 +49,8 @@ html {
   --miniplayer-width: calc(var(--miniplayer-multiplier) * 16vh);
   --miniplayer-height: calc(var(--miniplayer-multiplier) * 9vh);
   /*Playback*/
+  --playback-justify: center;
+  --playback-margin: var(--font-size);
   --playback-padding:
     calc(var(--main-padding) / 4)
     calc(var(--main-padding) / 2);
@@ -89,6 +91,8 @@ only screen and (orientation: portrait) {
     /*General*/
     --background-width: auto;
     --background-height: 100%;
+    /*Table*/
+    --data-title-width: 70%;
     /*Main*/
     --notice-direction: column-reverse;
     --notice-div-align: center;
@@ -111,16 +115,13 @@ only screen and (orientation: landscape) and (max-height: 600px) {
 @media only screen and (orientation: landscape) and (max-height: 600px),
 only screen and (orientation: portrait) {
   html {
+    /*Button*/
+    --duration-button-constant: 1.5;
+    --track-button-constant: 1.75;
+    --play-button-constant: 2;
+    --settings-button-constant: 1.25;
     /*Table*/
     --data-min-height: 20vmin;
-    --data-title-width:
-      calc(100vw - (
-        var(--data-width-small) * 2.25 +
-        var(--data-height) +
-        var(--main-padding) * 2
-      ));
-    --data-duration-width: 5vmin;
-    --data-width-small: var(--data-duration-width);
     /*Main*/
     --main-margin: 0;
     --main-padding: 2vh;
@@ -139,6 +140,8 @@ only screen and (orientation: portrait) {
     --playlist-width: 100vw;
     --playlist-height: calc(100vh - var(--navbar-height));
     /*Playback*/
+    --playback-justify: space-between;
+    --playback-margin: 0;
     --playback-bottom: var(--navbar-height);
     --playback-index: 1;
     --playback-background: transparent;
@@ -161,15 +164,6 @@ only screen and (orientation: portrait) {
 
 @media only screen and (orientation: landscape) and (max-aspect-ratio: 3/2) {
   html {
-    /*Table*/
-    --data-title-width: 
-      calc(100vw - (
-        var(--data-width-small) +
-        var(--data-height) +
-        var(--navbar-icon-height) +
-        var(--navbar-width) +
-        var(--main-padding) * 2
-      ));
     /*Visualizer*/
     --visualizer-picture-height: auto;
     --visualizer-navigation-width: calc(100% - var(--navbar-width));
@@ -182,16 +176,10 @@ only screen and (orientation: portrait) {
 
 @media only screen and (orientation: landscape) and (max-height: 600px) {
   html {
-    /*Button*/
-    --settings-button-constant: 1.5;
     /*General*/
     --font-size-multiplier: 2;
     /*Button*/
-    --track-button-constant: 2;
-    --play-button-constant: 2.5;
-    /*Table*/
-    --data-width-small: 15vh;
-    --data-width-medium: 50vh;
+    --settings-button-constant: 1.5;
     /*Main*/
     --main-width: fit-content;
     --notice-width: 100%;
@@ -223,17 +211,12 @@ only screen and (orientation: portrait) {
 
 @media only screen and (orientation: portrait) {
   html {
-    /*Button*/
-    --settings-button-constant: 1.25;
     /*General*/
     --font-size-multiplier: 1.5;
     /*Button*/
-    --duration-button-constant: 1;
-    --track-button-constant: 1.25;
-    --play-button-constant: 1.5;
+    --control-button-margin: calc(var(--font-size) * .5);
     /*Table*/
-    --data-width-small: 11.25vh;
-    --data-width-medium: 37.5vh;
+    --data-title-width: 60%;
     /*Main*/
     --main-width: 100%;
     --main-height-shrinked: var(--playback-height);    

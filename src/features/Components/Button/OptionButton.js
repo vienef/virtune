@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
+import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import { Button } from './Button';
 import './PlaylistButton.css';
 
@@ -8,7 +8,7 @@ export default function OptionButton({ song }) {
   
   return (
     <Button className='option-button button--off' title={title}>
-      <FontAwesomeIcon icon={faEllipsis} />
+      <FontAwesomeIcon icon={faEllipsisVertical} />
     </Button>
   );
 }

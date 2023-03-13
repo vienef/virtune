@@ -8,7 +8,7 @@ import { PlaylistInfo, SongInfo } from '../../Components/Artwork/Info';
 import { generatePlayerButton } from '../../Components/Button/PlayerButton';
 import './Miniplayer.css';
 
-export default function Miniplayer({ properties, isPlaying, handlers }) {
+export default function Miniplayer({ properties, handlers }) {
   const theme = useThemeContext();
   const { orientation, track } = properties;
   const { handleMaximizeClick, handleCloseClick } = handlers;
@@ -30,7 +30,7 @@ export default function Miniplayer({ properties, isPlaying, handlers }) {
   const playlistInfo = <PlaylistInfo name={name} playlist={playlist} />;
   const songArtwork = <SongArtwork name={name} track={track} />;
   const songInfo = <SongInfo name='playback' track={track} />;
-  const defaultArtwork = <DefaultArtwork name={name} />;
+  const defaultArtwork = <DefaultArtwork />;
 
   const sectionClass = `${isMobile ? '' : 'perfect-center'} miniplayer${
     isMobile
@@ -43,7 +43,7 @@ export default function Miniplayer({ properties, isPlaying, handlers }) {
       <h2 className='hidden'>Miniplayer</h2>
       <nav><ul className='miniplayer-list'>{playerButtons}</ul></nav>
       {isDesktop ? playlistArtwork : song ? songArtwork : defaultArtwork}
-      {isMobile ? square ? playlistInfo : isPlaying ? songInfo : '' : ''}
+      {isMobile ? square ? playlistInfo : song ? songInfo : '' : ''}
     </section>
   );
 }

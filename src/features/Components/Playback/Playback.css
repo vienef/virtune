@@ -34,7 +34,7 @@
 .playback-control {
   display: flex;
   flex-direction: var(--playback-center-direction);
-  justify-content: space-between;
+  justify-content: var(--playback-justify);
   align-items: var(--playback-center-align);
   width: var(--playback-center-width);
   height: var(--playback-center-height);
@@ -50,6 +50,7 @@
   align-self: var(--playback-center-self);
   display: flex;
   justify-content: center;
+  margin-bottom: var(--playback-margin);
   max-width: 75%;
 }
 

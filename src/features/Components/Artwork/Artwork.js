@@ -14,22 +14,35 @@ function Artwork({ content, ...props }) {
   const webp = require(`../../../assets/${artwork}.webp`);
   const png = require(`../../../assets/${artwork}.png`);
 
+  const defaultStyle = {
+    filter: theme === 'dark' && name === 'default'
+      ? 'invert(100%)'
+      : 'invert(0)'
+  };
+
   return (
     <picture className={picture} {...props}>
       <source srcSet={webp} type='image/webp' />
-      <img className={img} src={png} alt={alt} width={size} height={size} />
+      <img
+        className={img}
+        src={png}
+        alt={alt}
+        width={size}
+        height={size}
+        style={defaultStyle}
+      />
     </picture>
   );
 }
 
-export function DefaultArtwork({...props}) {
+export function DefaultArtwork() {
   const content = {
     name: 'default',
     artwork: 'virtune',
     description: 'Virtune logo.'
   };
 
-  return <Artwork content={content} {...props} />;
+  return <Artwork content={content} />;
 }
 
 export function BackgroundArtwork({ song, ...props }) {

@@ -1,4 +1,3 @@
-import { useThemeContext } from '../../Contexts/ThemeContext';
 import {
   DefaultArtwork,
   PlaylistArtwork,
@@ -9,7 +8,6 @@ import { generatePlayerButton } from '../../Components/Button/PlayerButton';
 import './Visualizer.css';
 
 export default function Visualizer({ properties, isVisualizer, handlers }) {
-  const mode = useThemeContext();
   const { handleListClick, handleMinimizeClick, handleCloseClick } = handlers;
   const { rgb, window, track } = properties;
   const { portrait, square, landscape } = window;
@@ -30,11 +28,6 @@ export default function Visualizer({ properties, isVisualizer, handlers }) {
     boxShadow: landscape ? visualizerShadow : 'none'
   };
   const artworkStyle = { opacity: isVisualizer ? '0' : '1' };
-  const defaultStyle = {
-    filter: mode === 'dark' && !isDesktop
-      ? 'invert(100%)'
-      : 'invert(0)'
-  };
 
   const playlistArtwork = (
     <PlaylistArtwork
@@ -44,7 +37,7 @@ export default function Visualizer({ properties, isVisualizer, handlers }) {
     />
   );
   const songArtwork = <SongArtwork name={name} track={track} />;
-  const defaultArtwork = <DefaultArtwork style={defaultStyle} />;
+  const defaultArtwork = <DefaultArtwork />;
 
   const playlistInfo = (
     <PlaylistInfo
