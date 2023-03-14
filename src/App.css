@@ -15,7 +15,8 @@
   width: var(--scrollbar-width);
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb,
+::-moz-range-thumb {
   background-color: var(--high-emphasize);
   border-radius: calc(var(--scrollbar-width) * .5);
   transition: var(--transition);
