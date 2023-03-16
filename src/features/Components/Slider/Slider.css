@@ -62,6 +62,18 @@
   transition: var(--transition);
 }
 
+.slider--dark:hover input::-moz-range-thumb {
+  background-color: var(--high-emphasize);
+  box-shadow: 0 0 calc(var(--border-radius) / 2) var(--surface);
+  transition: var(--transition);
+}
+
+.slider--light:hover input::-moz-range-thumb {
+  background-color: var(--high-emphasize);
+  box-shadow: 0 0 calc(var(--border-radius) / 2) var(--surface);
+  transition: var(--transition);
+}
+
 .slider--dark input:hover ~ .slider-background .slider-track,
 .slider--light input:hover ~ .slider-background .slider-track,
 .slider--dark input:focus ~ .slider-background .slider-track,

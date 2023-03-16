@@ -15,8 +15,7 @@
   width: var(--scrollbar-width);
 }
 
-::-webkit-scrollbar-thumb,
-::-moz-range-thumb {
+::-webkit-scrollbar-thumb {
   background-color: var(--high-emphasize);
   border-radius: calc(var(--scrollbar-width) * .5);
   transition: var(--transition);
@@ -148,6 +147,26 @@ input::-webkit-slider-thumb {
   background-color: transparent;
   border-radius: var(--scrollbar-width);
   appearance: none;
+}
+
+input::-moz-range-thumb {
+  --size: calc(var(--scrollbar-width) * 2);
+  height: var(--size);
+  width: var(--size);
+  background-color: transparent;
+  border-radius: var(--scrollbar-width);
+  border: none;
+  appearance: none;
+}
+
+input:disabled:hover::-moz-range-thumb {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+input::-moz-focusring,
+input:disabled:hover::-moz-focusring {
+  outline: none;
 }
 
 /*Hyperlink & Button*/
