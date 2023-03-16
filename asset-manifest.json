@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/virtune/static/css/main.a2bcc7d4.css",
+    "main.css": "/virtune/static/css/main.f6968f73.css",
     "main.js": "/virtune/static/js/main.6f3c6602.js",
     "static/js/6247.9986db17.chunk.js": "/virtune/static/js/6247.9986db17.chunk.js",
     "static/js/7072.7cdfd4c0.chunk.js": "/virtune/static/js/7072.7cdfd4c0.chunk.js",
@@ -254,12 +254,12 @@
     "static/media/thykier_shimmer.webp": "/virtune/static/media/thykier_shimmer.8f7d4af970dd4fcb1bcf.webp",
     "static/media/epic_energetic.webp": "/virtune/static/media/epic_energetic.e2de36d80a5f10d1dccb.webp",
     "index.html": "/virtune/index.html",
-    "main.a2bcc7d4.css.map": "/virtune/static/css/main.a2bcc7d4.css.map",
+    "main.f6968f73.css.map": "/virtune/static/css/main.f6968f73.css.map",
     "main.6f3c6602.js.map": "/virtune/static/js/main.6f3c6602.js.map",
     "787.12769316.chunk.js.map": "/virtune/static/js/787.12769316.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2bcc7d4.css",
+    "static/css/main.f6968f73.css",
     "static/js/main.6f3c6602.js"
   ]
 }
